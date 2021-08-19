@@ -21,6 +21,16 @@ class Book implements Comparable<Book>{
             return 0;
         }
     }
+
+    @Override
+    public String toString() {
+        return
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", author='" + author + '\'' +
+                ", publisher='" + publisher + '\'' +
+                ", quantity=" + quantity ;
+    }
 }
 public class TreeSetExample {
     public static void main(String[] args) {
@@ -35,7 +45,7 @@ public class TreeSetExample {
         set.add(b3);
         //Traversing TreeSet
         for (Book b : set) {
-            System.out.println(b.id + " " + b.name + " " + b.author + " " + b.publisher + " " + b.quantity);
+            System.out.println(b);
         }
     }
 }

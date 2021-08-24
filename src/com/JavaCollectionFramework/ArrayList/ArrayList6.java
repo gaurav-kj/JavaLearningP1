@@ -13,13 +13,12 @@ class ArrayList6 {
 
         try
         {
-            //Serialization
+
             FileOutputStream fos=new FileOutputStream("file");
             ObjectOutputStream oos=new ObjectOutputStream(fos);
             oos.writeObject(al);
             fos.close();
             oos.close();
-            //Deserialization
             FileInputStream fis=new FileInputStream("file");
             ObjectInputStream ois=new ObjectInputStream(fis);
             ArrayList  list=(ArrayList)ois.readObject();

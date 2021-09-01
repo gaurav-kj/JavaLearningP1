@@ -33,9 +33,12 @@ public class HashSetCar {
         Car b1=new Car(1,"Tata","Harrier","2021",8);
         Car b2=new Car(2,"Mahindra","Thar","2021",4);
         Car b3=new Car(3,"jeep","Compass","2021",6);
+        Car b4=new Car(1,"Tata","Harrier","2022",8);
+
         list.add(b1);
         list.add(b2);
         list.add(b3);
+        list.add(b4);
         for(Car c:list){
             System.out.println(c);
         }

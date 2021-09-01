@@ -29,15 +29,18 @@ class Car{
 }
 public class LinkedHashSetCar {
     public static void main(String[] args) {
-        Set<Car> list=new LinkedHashSet<>();
+        Set<Car> Carlist=new LinkedHashSet<>();
         Car b1=new Car(1,"Tata","Harrier","2021",8);
         Car b2=new Car(2,"Mahindra","Thar","2021",4);
         Car b3=new Car(3,"jeep","Compass","2021",6);
-        list.add(b1);
-        list.add(b2);
-        list.add(b3);
-        for(Car c:list){
-            System.out.println(c);
+        Car b4=new Car(4,"Tata","Harrier","2022",8);
+
+        Carlist.add(b1);
+        Carlist.add(b2);
+        Carlist.add(b3);
+        Carlist.add(b4);
+        for(Car car:Carlist){
+            System.out.println(car);
         }
     }
 }

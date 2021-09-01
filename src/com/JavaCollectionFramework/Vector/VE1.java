@@ -1,4 +1,5 @@
 package com.JavaCollectionFramework.Vector;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.Vector;
@@ -45,8 +46,10 @@ public class VE1 {
         }
 
         String[] arr = new String[10];
+        ArrayList<String> arr2 = new ArrayList<>();
 
         vc.copyInto(arr);
+       // vc.copyInto(arr2);
         System.out.println("Elements of the Array: ");
         //Print elements of an Array
         for(String temp : arr)
